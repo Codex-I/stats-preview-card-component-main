@@ -1,0 +1,130 @@
+@import url("https://fonts.google.com/specimen/Inter");
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: hsla(0, 0%, 100%, 0.4);
+}
+
+body {
+    margin: 0 auto;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    margin: 30px auto;
+    width: 285px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-img {
+    background: url("../images/image-header-mobile.jpg") no-repeat center/cover;
+    max-width: 100%;
+    width: 500px;
+    height: 200px;
+    border-radius: 7px 7px 0 0;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background-color: hsla(277, 71%, 41%, 0.5);
+    height: 200px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 12%;
+}
+
+.f-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.f-container h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: inter, sans-serif;
+    width: 233px;
+}
+.f-container h2 span {
+    color: hsl(277, 64%, 61%);
+}
+.f-container p {
+    color: hsla(0, 0%, 100%, 0.6);
+    width: 248px;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.s-container {
+    gap: 11px;
+    display: flex;
+    flex-direction: column;
+}
+.s-container h3 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 700;
+}
+
+/* for large screens */
+@media only screen and (min-width: 727px),  (min-width: 1009px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+        margin-top: 30vh;
+    }
+
+    .card-img {
+        background: url(../images/image-header-mobile.jpg) no-repeat center/cover;
+        width: 50%;
+        height: auto;
+        border-radius: 7px 7px 0 0;
+    }
+    .overlay {
+        height: 40vh;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 50%;
+        padding: 3%;
+    }
+
+    .f-container h2 {
+        width: 250px;
+    }
+    .f-container p {
+        width: 280px;
+        font-size: 12px;
+    }
+
+    .s-container {
+        flex-direction: row;
+        font-size: 12px;
+        gap: 50px;
+    }
+    .s-container div {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        align-items: flex-start;
+    }
+    div p {
+        font-size: 10px;
+    }
+
+}
